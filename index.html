@@ -1,30 +1,318 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-<!--Midterm Exam (10 points) -- Each of the following steps is worth one point as you build an online resume:
-  1. Add a title tag to name the page with your name, ie. Hadi Asgharpour resume
-  2. Add a first-level heading to the page with your name
-  3. Add a paragraph tag beneath the first heading and write two sentences about yourself. 
-  4. Add a second-level heading to the page to create the Education section
-  5. Add a bulleted or numbered list in that section with the names of schools you have attended after high school. Then repeat steps 4 and 5 for other sections, such as Employment, Skills (to list software skills, etc.), Awards or Clubs (if those apply), or anything else you want to add.
-  6. Add links to the page where appropriate (you need to have at least one link). If you want to make a link to email you, the href should point to "mailto:youremailaddress@utdallas.edu"
-  7. Choose two Google Web Fonts and link to them in your page--one for your display text (title of your page or headings) and one for body copy
-  8. Create internal or external styles (your choice) to change the font-face (use the Google Web Font) and color of your headings, and create other typographic treatments
-  9. Add the necessary links from getbootstrap.com to use the Bootstrap framework and add the following wrapper to your page starting just beneath the body tag (and closing just before the close body tag):
-        <div class="container">
-          Add resume content here
-        </div>
-  10. Stage and commit your changes; then make sure your repo is hosting live Github pages. You will submit your live .io page and the link to your repo.
-  11. Bonus point: Add an image of yourself or of one of your artworks to the page
-  12. Second bonus point: Create your resume as a two-column grid, centered in the page (for people really diving into Bootstrap already)
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    When you are finished, submit the two links (link to your github.io live page and link to your Github repo) on eLearning
-    -->
-  
+  <title>Saniya Aziz Resume</title>
+
+  <!-- Google Fonts: Lora for headings, Source Sans 3 for body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap framework -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+  <!-- Custom styles -->
+  <style>
+    body {
+      background-color: #f5f1ec;
+      color: #333333;
+      font-family: "Source Sans 3", sans-serif;
+      line-height: 1.7;
+    }
+
+    .resume {
+      max-width: 1050px;
+      margin: 40px auto;
+      padding: 48px;
+      background-color: #ffffff;
+      border-top: 7px solid #704454;
+      border-radius: 8px;
+    }
+
+    header {
+      padding-bottom: 24px;
+      border-bottom: 1px solid #ddd4d7;
+    }
+
+    h1, h2 {
+      font-family: "Lora", serif;
+      color: #704454;
+    }
+
+    h1 {
+      font-size: clamp(2.3rem, 6vw, 3.5rem);
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-top: 30px;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #ddd4d7;
+    }
+
+    .intro {
+      max-width: 760px;
+      font-size: 1.15rem;
+    }
+
+    a {
+      color: #704454;
+      text-underline-offset: 4px;
+    }
+
+    a:hover {
+      color: #442532;
+    }
+
+    li {
+      margin-bottom: 12px;
+    }
+
+    .details {
+      color: #626262;
+    }
+
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd4d7;
+      color: #626262;
+    }
+
+    @media (max-width: 575px) {
+      .resume {
+        margin: 16px auto;
+        padding: 24px;
+      }
+    }
+  </style>
 </head>
-<body>
-  
 
+<body>
+  <div class="container">
+    <main class="resume">
+
+      <header>
+        <!-- Optional image bonus:
+        Upload your photo as profile.jpg, then uncomment this line:
+        <img src="profile.jpg" alt="Saniya Aziz" class="profile-photo">
+        -->
+
+        <h1>Saniya Aziz</h1>
+
+        <p class="intro">
+          I am an Arts, Technology and Emerging Communication student
+          at the University of Texas at Dallas with a concentration
+          in journalism.
+          I enjoy writing, connecting with people, and creating work
+          that brings attention to stories and communities.
+        </p>
+
+        <p class="mb-0">
+          <a href="mailto:saniya.aziz2003@gmail.com">Email me</a>
+          <span aria-hidden="true"> · </span>
+          <a href="https://saniyaazizjournalism.carrd.co/">
+            View my portfolio
+          </a>
+        </p>
+      </header>
+
+      <!-- Two-column Bootstrap layout -->
+      <div class="row gx-5">
+
+        <!-- Left column -->
+        <div class="col-md-7">
+
+          <section aria-labelledby="education">
+            <h2 id="education">Education</h2>
+            <ul>
+              <li>
+                <strong>The University of Texas at Dallas</strong><br>
+                Bachelor of Arts in Arts, Technology and
+                Emerging Communication<br>
+                Concentration: Journalism<br>
+                <span class="details">
+                  Expected graduation: December 2026
+                </span>
+              </li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="experience">
+            <h2 id="experience">Employment and Experience</h2>
+            <ul>
+              <li>
+                <strong>Residential Experience Specialist</strong><br>
+                Balfour Beatty — Dallas, Texas<br>
+                <span class="details">October 2025–June 2026</span>
+                <p>
+                  Supported customer engagement, analyzed feedback,
+                  and worked with project teams to improve service
+                  quality and client satisfaction.
+                </p>
+              </li>
+
+              <li>
+                <strong>
+                  Customer Service and Financial Literacy Outreach Intern
+                </strong><br>
+                Emirates NBD — Dubai, UAE<br>
+                <span class="details">June–August 2023</span>
+                <p>
+                  Assisted customers at the front desk, participated
+                  in service training, and contributed to proposals
+                  for financial literacy sessions.
+                </p>
+              </li>
+
+              <li>
+                <strong>Customer Care and Marketing Intern</strong><br>
+                Al Futtaim Automotive, CDJR Showroom — Dubai, UAE<br>
+                <span class="details">May–August 2022</span>
+                <p>
+                  Supported customer care teams and gained experience
+                  with dealership marketing, customer communication,
+                  and pandemic-related service changes.
+                </p>
+              </li>
+
+              <li>
+                <strong>Virtual Concert Event Coordinator</strong><br>
+                Deira International School — Dubai, UAE<br>
+                <span class="details">
+                  September 2021–June 2022
+                </span>
+                <p>
+                  Co-managed monthly virtual concerts, coordinated
+                  performers, and helped keep events organized
+                  and engaging.
+                </p>
+              </li>
+
+              <li>
+                <strong>Contributing Writer</strong><br>
+                International Community Media Platform<br>
+                <span class="details">February 2020–June 2022</span>
+                <p>
+                  Wrote articles, edited blog and social media
+                  content, and covered community events to encourage
+                  cultural understanding and involvement.
+                </p>
+              </li>
+            </ul>
+          </section>
+
+        </div>
+
+        <!-- Right column -->
+        <div class="col-md-5">
+
+          <section aria-labelledby="skills">
+            <h2 id="skills">Skills</h2>
+            <ul>
+              <li>Writing and content editing</li>
+              <li>Customer engagement and relationship building</li>
+              <li>Customer feedback analysis</li>
+              <li>Market research and data analysis</li>
+              <li>Event planning and coordination</li>
+              <li>Training material development</li>
+              <li>Team collaboration</li>
+              <li>Digital and design foundations</li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="leadership">
+            <h2 id="leadership">Leadership and Activities</h2>
+            <ul>
+              <li>
+                <strong>President, Muslim Student Association</strong><br>
+                University of Texas at Dallas<br>
+                Led meetings, campus initiatives, and events
+                supporting cultural awareness and student engagement.
+              </li>
+
+              <li>
+                <strong>
+                  Board Member, Pakistan Student Association
+                </strong><br>
+                University of Texas at Dallas<br>
+                Helped plan cultural events, promote programs,
+                and connect with members.
+              </li>
+
+              <li>
+                <strong>
+                  Member, Phi Chi Theta Professional Business Fraternity
+                </strong><br>
+                Participated in networking, professional development,
+                and community service activities.
+              </li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="volunteering">
+            <h2 id="volunteering">Volunteering</h2>
+            <ul>
+              <li>
+                <strong>FAME Special Needs Initiative</strong><br>
+                Helped children prepare for talent showcases and
+                supported scheduling and volunteer coordination.
+              </li>
+
+              <li>
+                <strong>Early Childhood Development Center</strong><br>
+                Taught lessons focused on values, personal
+                development, and community awareness.
+              </li>
+
+              <li>
+                <strong>Community Center, Dallas</strong><br>
+                Supported students through lessons, interactive
+                discussions, and activities.
+              </li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="languages">
+            <h2 id="languages">Languages</h2>
+            <ul>
+              <li>English — Highly proficient</li>
+              <li>Hindi/Urdu — Proficient</li>
+              <li>Arabic — Proficient</li>
+              <li>French — Novice</li>
+            </ul>
+          </section>
+
+        </div>
+      </div>
+
+      <footer>
+        <p class="mb-0">
+          Explore my writing and projects in
+          <a href="https://saniyaazizjournalism.carrd.co/">
+            my portfolio
+          </a>.
+        </p>
+      </footer>
+
+    </main>
+  </div>
 </body>
 </html>
